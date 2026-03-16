@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Social Correction Store — A Digital Exhibit on Rejection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ENTRY VIEW (landing page) -->
+  <div id="entry-view" class="active">
+    <div class="entry-background">
+      <img src="storefront.jpg" alt="Building storefront" class="entry-bg-img">
+    </div>
+
+    <div class="entry-content">
+      <!-- Top Title Header -->
+      <div class="entry-header-box">
+        <h1 class="entry-title">Curatorial Statement</h1>
+      </div>
+
+      <!-- The Interactive Door -->
+      <button class="interactive-door" id="enter-door" aria-label="Enter the exhibit">
+        <div class="door-panel top-panels">
+          <div class="panel"></div>
+          <div class="panel"></div>
+        </div>
+        <div class="door-panel bottom-panels">
+          <div class="panel"></div>
+          <div class="panel"></div>
+        </div>
+        <div class="mail-slot"></div>
+        <div class="door-knob"></div>
+      </button>
+
+      <!-- The Curatorial Statement Panels -->
+      <div class="curatorial-card card-left">
+        <p>Our exhibit analyzes how rejection can operate as a medium and form of social correction. Across many societies and cultures, individuals are expected to conform to certain social norms regarding work, relationships, and adulthood. Deviations from these expectations leads to subtle forms of rejection, which can take form of questions, criticism, or social pressure which encourage them to return to what society considers to be “normal”.</p>
+      </div>
+
+      <div class="curatorial-card card-right">
+        <p>These reactions arise subtly in everyday settings, rather than coming across like direct and intentional punishment and conditioning. To exemplify this idea, our exhibit is structured as a convenience store inspired by <em>Convenience Store Woman</em>. Each aisle represents a different category of social expectation, relating to things like productivity, relationships, and behavioral norms.</p>
+        <p>Just as products are arranged in a store to be sold and accessed for easy consumption, these expectations are presented as ordinary and desirable life choices. By moving through our 5 aisles, viewers can observe how rejection functions as a subtle mechanism tending towards social correction, encouraging conformity.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- LANDING / STORE VIEW -->
+  <div id="store-view">
+    <div class="store-overlay">
+      <div class="store-header-box">
+        <h1 class="store-title">The Normality Store</h1>
+        <p class="store-subtitle">Browse what society is selling. Click an aisle to explore.</p>
+      </div>
+    </div>
+
+    <div class="store-image-wrapper">
+      <img src="supermarket-stalls-coolers-food-drink-4a08f7-1024.jpg" alt="Convenience store interior" class="store-bg"
+        id="store-img">
+
+      <!-- Clickable hotspots pinned to structural targets -->
+
+      <!-- Aisle 1: Social Correction (First fruit aisle top) -->
+      <button class="hotspot" id="hs-work" data-aisle="work" style="left:28%; top:18%; width:auto; height:auto;">
+        <span class="hotspot-label">Aisle 1<br>Social Correction</span>
+      </button>
+
+      <!-- Aisle 2: Work and Productivity (Second fruit aisle) -->
+      <button class="hotspot" id="hs-relationships" data-aisle="relationships" style="left:28%; top:34%; width:auto; height:auto;">
+        <span class="hotspot-label">Aisle 2<br>Work and Productivity</span>
+      </button>
+
+      <!-- Aisle 3: TO BE COMPLETED (Third fruit aisle) -->
+      <button class="hotspot" id="hs-gender" data-aisle="gender" style="left:22%; top:63%; width:auto; height:auto;">
+        <span class="hotspot-label">Aisle 3<br>TO BE COMPLETED</span>
+      </button>
+
+      <!-- Aisle 4: TO BE COMPLETED (Fourth fruit aisle bottom) -->
+      <button class="hotspot hotspot-oval" id="hs-timelines" data-aisle="timelines" style="left:40%; top:84%; width:auto; height:auto;">
+        <span class="hotspot-label">Aisle 4<br>TO BE COMPLETED</span>
+      </button>
+
+      <!-- Aisle 5: TO BE COMPLETED (Coffee station far right background) -->
+      <button class="hotspot" id="hs-identity" data-aisle="identity"
+        style="left:88%; top:15%; width:auto; height:auto;">
+        <span class="hotspot-label">Aisle 5<br>TO BE COMPLETED</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- AISLE DETAIL VIEW -->
+  <div id="aisle-view">
+    <button class="back-btn" id="back-btn">&larr; Back to Store</button>
+    <div class="aisle-header">
+      <h2 id="aisle-title"></h2>
+      <p id="aisle-description"></p>
+    </div>
+    <div class="aisle-items" id="aisle-items">
+      <!-- Items injected by JS -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</htmlts>
