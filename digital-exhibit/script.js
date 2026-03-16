@@ -8,8 +8,13 @@ const aisles = {
     items: [
       {
         title: "The Truman Show",
-        caption: "The Truman Show is a Comedy/Sci-fi movie that came in 1998. It uses satirical elements to detail the life of Truman Burbank who realizes his entire life is a reality television show. The television show takes place in Seahaven, where any deviation from normalcy is met with aggression. The community doesn’t let Truman leave the city and tries to correct his behavior and revert him back to his primal state of a predictable working class man. ",
-        youtubeId: "5Z_7TkX92bU",
+        description: "Clip from a 'Bartleby, the Scrivener' stop-motion adaptation.",
+        items: [
+          {
+            title: "In this short clip of the stop-motion adaptation of Bartleby by Herman Melville, Bartleby calmly and politely declines to perform the task he was assigned by his boss. This elicits a grandiose, dramatic reaction manifested by literal, atmospheric strikes of lightning, encapsulating how going against the status quo is so looked down upon by those in capitalist power. The white sterile environment of the corporate office, paralleling that of the convenience store, emphasizes how one’s sense of self is forgone as workers are reduced to nothing more than widgets in a society that values productivity above all else. Bartleby’s quiet rejection disrupts this system, creating a need for immediate social punishment. ",
+            youtubeId: "5Z_7TkX92bU",
+          },
+        ]
       },
     ],
   },
