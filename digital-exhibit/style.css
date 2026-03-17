@@ -713,6 +713,14 @@ body {
   padding: 30px;
 }
 
+.text-card-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0 0 10px 10px;
+  margin-top: 20px;
+}
+
 .light-card-header {
   display: flex;
   align-items: center;

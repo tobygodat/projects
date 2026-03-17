@@ -61,6 +61,7 @@ const aisles = {
         type: "text",
         source: "Convenience Store Woman — Sayaka Murata, 2016",
         quote: `"I want you to be cured, Keiko... Please try to be normal!"`,
+        media: "governmentbureau.jpg",
         curatorNote: "This excerpt from Sayaka Murata's <i>Convenience Store Woman</i> depicts the moment Keiko's sister breaks down into a plea for Keiko to pursue a societally acceptable and conventional career. Her emotionally charged outcry to Keiko serves as a deeply personal form of social correction, only adding to the pressure Keiko already faced. As <a href='https://link.springer.com/article/10.1007/s10964-016-0441-2'>Yang Hou, Su Yeong Kim, and Yijie Wang</a> examine in their 2016 research, strong cultural values like family reputation and adherence to social norms can create tension when individuals diverge from expected life paths. Families often act as the primary agent of change for an individual, as seen in this instance as Keiko is slowly disciplined back into the acceptable boundaries of society."
       }
     ]
@@ -77,6 +78,7 @@ const aisles = {
         type: "text",
         source: "Bartleby, the Scrivener — Herman Melville, 1853",
         quote: `"You are decided, then, not to comply with my request—a request made according to common usage and common sense?"`,
+        media: "bartleby.jpg",
         curatorNote: "This quote from Herman Melville's <i>Bartleby, the Scrivener</i> occurs when the narrator attempts to fit Bartleby back into the box of workplace standards. Bartleby's boss subconsciously masks his outright rejection of Bartleby as an appeal to common sense and logic. In <a href='https://www.dukeupress.edu/the-promise-of-happiness'>Sara Ahmed's 2010 cultural critique 'The Promise of Happiness'</a>, she explains how societies define their happiness through socially acceptable life choices pertaining to career, relationship, and lifestyle choices, amongst others. Individuals who do not live up to these expectations are seen as abnormal or even unsuccessful, as they deviate from the 'predetermined blueprint'. The narrator's description of his request as 'common sense' is a direct application of this blueprint onto Bartleby's unconventional lifestyle. Rather than accepting the capitalistic productivity standard, Bartleby chooses to rebel, creating the necessity in the narrator's head to force him back into the blueprint."
       }
     ]
@@ -188,6 +190,7 @@ function openAisle(key) {
             </div>
             <div class="light-card-source">${item.source}</div>
             <blockquote class="light-card-quote">${item.quote}</blockquote>
+            ${item.media ? `<img class="text-card-img" src="${item.media}" alt="${item.source || ''}">` : ''}
           </div>
           <div class="light-card curator-note-card">
             <div class="light-card-header">
