@@ -35,16 +35,19 @@ const aisles = {
   },
 
   gender: {
-    title: "Aisle 3",
-    description:
-      "",
+    title: "AISLE 03",
+    subtitle: "Behavioral Norms",
+    theme: "light",
+    quote: `Conform.`,
+    description: "",
     items: [
       {
-        title: "The Giver",
-        caption: "",
-        media: "thegiver.jpg",
-      },
-    ],
+        type: "text",
+        source: "Bartleby, the Scrivener - Herman Melville, 1853",
+        quote: `"I found him there, leaning his head against the cold wall, his knees drawn up, and his hands on his knees, and his face towards the wall.”`,
+        curatorNote: "This is a quote from 'Bartleby, The Scrivener' by Herman Melville that shows the full social regression of Bartleby at the end of the story. After being let go from the office and transported to the prison, he is seen in a fetal-like position, refusing to even perform necessary actions to survive including eating and drinking. Individuals that can’t be fixed by social correction are like expired products moved to the back shelves, they no longer have a place in a society. These are the consequences of when social correction is not sufficient enough to correct unordinary behavior",
+      }
+    ]
   },
 
   timelines: {
@@ -58,22 +61,25 @@ const aisles = {
         type: "text",
         source: "Convenience Store Woman — Sayaka Murata, 2016",
         quote: `"I want you to be cured, Keiko... Please try to be normal!"`,
-        curatorNote: "This excerpt from Sayaka Murata's <i>Convenience Store Woman</i> depicts the moment Keiko's sister breaks down into a plea for Keiko to pursue a societally acceptable and conventional career. Her emotionally charged outcry to Keiko serves as a subtle nudge, pressuring Keiko into social correction. As <a href='https://pubmed.ncbi.nlm.nih.gov/24820295/'>Su Yeong Kim and Yijie Wang</a> examine in their 2009 research, strong cultural values like family reputation and adherence to social norms can create tension when individuals diverge from expected life paths. Families often act as the primary agent of change for an individual, as seen in this instance as Keiko is slowly disciplined back into the acceptable boundaries of society."
+        curatorNote: "This excerpt from Sayaka Murata's <i>Convenience Store Woman</i> depicts the moment Keiko's sister breaks down into a plea for Keiko to pursue a societally acceptable and conventional career. Her emotionally charged outcry to Keiko serves as a deeply personal form of social correction, only adding to the pressure Keiko already faced. As <a href='https://pubmed.ncbi.nlm.nih.gov/24820295/'>Su Yeong Kim and Yijie Wang</a> examine in their 2009 research, strong cultural values like family reputation and adherence to social norms can create tension when individuals diverge from expected life paths. Families often act as the primary agent of change for an individual, as seen in this instance as Keiko is slowly disciplined back into the acceptable boundaries of society."
       }
     ]
   },
 
   identity: {
-    title: "Aisle 5",
-    description:
-      "",
+    title: "AISLE 05",
+    subtitle: "Identity",
+    theme: "light",
+    quote: `Fit In.`,
+    description: "",
     items: [
       {
-        title: "Placeholder Item 1",
-        caption: "",
-        media: null,
-      },
-    ],
+        type: "text",
+        source: "Bartleby, the Scrivener — Herman Melville, 1853",
+        quote: `"You are decided, then, not to comply with my request—a request made according to common usage and common sense?"`,
+        curatorNote: "This quote from Herman Melville's <i>Bartleby, the Scrivener</i> occurs when the narrator attempts to fit Bartleby back into the box of workplace standards. Bartleby's boss subconsciously masks his outright rejection of Bartleby as an appeal to common sense and logic. In <a href='https://www.dukeupress.edu/the-promise-of-happiness'>Sara Ahmed's 2010 cultural critique 'The Promise of Happiness'</a>, she explains how societies define their happiness through socially acceptable life choices pertaining to career, relationship, and lifestyle choices, amongst others. Individuals who do not live up to these expectations are seen as abnormal or even unsuccessful, as they deviate from the 'predetermined blueprint'. The narrator's description of his request as 'common sense' is a direct application of this blueprint onto Bartleby's unconventional lifestyle. Rather than accepting the capitalistic productivity standard, Bartleby chooses to rebel, creating the necessity in the narrator's head to force him back into the blueprint."
+      }
+    ]
   },
 };
 
