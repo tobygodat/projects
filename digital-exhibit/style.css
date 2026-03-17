@@ -15,7 +15,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: #000;
+  background: #d5d5d5;
 }
 #entry-view.active { display: block; }
 
@@ -26,10 +26,7 @@ body {
 }
 
 .entry-bg-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  display: none;
 }
 
 .entry-content {

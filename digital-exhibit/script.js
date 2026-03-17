@@ -3,7 +3,7 @@
 const aisles = {
   work: {
     title: "AISLE 01",
-    subtitle: "Social Correction",
+    subtitle: "",
     theme: "light",
     quote: `Obey.`,
     description: "",
@@ -20,7 +20,7 @@ const aisles = {
 
   relationships: {
     title: "AISLE 02",
-    subtitle: "Work and Productivity",
+    subtitle: "",
     theme: "light",
     quote: `Be Useful.`,
     description: "",
@@ -36,7 +36,7 @@ const aisles = {
 
   gender: {
     title: "AISLE 03",
-    subtitle: "Behavioral Norms",
+    subtitle: "",
     theme: "light",
     quote: `Conform.`,
     description: "",
@@ -52,7 +52,7 @@ const aisles = {
 
   timelines: {
     title: "AISLE 04",
-    subtitle: "Work & Productivity",
+    subtitle: "",
     theme: "light",
     quote: `Be Normal.`,
     description: "",
@@ -68,7 +68,7 @@ const aisles = {
 
   identity: {
     title: "AISLE 05",
-    subtitle: "Identity",
+    subtitle: "",
     theme: "light",
     quote: `Fit In.`,
     description: "",
