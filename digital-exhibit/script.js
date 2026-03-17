@@ -11,6 +11,7 @@ const aisles = {
       {
         type: "visual",
         youtubeId: "5Z_7TkX92bU",
+        youtubeTime: "7:11",
         source: "Bartleby, the Scrivener (Stop-Motion Adaptation)",
         curatorNote: "In this short clip of the stop-motion adaptation of Bartleby by Herman Melville, Bartleby calmly and politely declines to perform the task he was assigned by his boss. This elicits a grandiose, dramatic reaction manifested by literal, atmospheric strikes of lightning, encapsulating how going against the status quo is so looked down upon by those in capitalist power. The white sterile environment of the corporate office, paralleling that of the convenience store, emphasizes how one's sense of self is forgone as workers are reduced to nothing more than widgets in a society that values productivity above all else. Bartleby's quiet rejection disrupts this system, creating a need for immediate social punishment."
       }
