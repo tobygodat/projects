@@ -81,6 +81,36 @@ const aisles = {
       }
     ]
   },
+
+  worksCited: {
+    title: "AISLE 06",
+    subtitle: "Works Cited",
+    theme: "light",
+    quote: `Works Cited`,
+    description: "",
+    items: [
+      {
+        type: "citation",
+        text: `Ahmed, Sara. <i>The Promise of Happiness</i>. Duke University Press, www.dukeupress.edu/the-promise-of-happiness. Accessed 16 Mar. 2026.`
+      },
+      {
+        type: "citation",
+        text: `Hou, Yang, et al. “Parental Acculturative Stressors and Adolescent Adjustment Through Interparental and Parent–Child Relationships in Chinese American Families.” <i>Journal of Youth and Adolescence</i>, vol. 45, no. 7, 17 Feb. 2016, pp. 1466–1481, https://doi.org/10.1007/s10964-016-0441-2.`
+      },
+      {
+        type: "citation",
+        text: `Melville, Herman. "Bartleby, the Scrivener." <i>Putnam’s Monthly Magazine</i>, moglen.law.columbia.edu/LCS/bartleby.pdf. Accessed 16 Mar. 2026.`
+      },
+      {
+        type: "citation",
+        text: `Murata, Sayaka. <i>Convenience Store Woman</i>. Translated by Ginny Tapley Takemori, Grove Press, 2018. Originally published 2016.`
+      },
+      {
+        type: "citation",
+        text: `"Bartleby (2018, By the By Productions)". <i>YouTube</i>, uploaded by Eate Studios, 19 Nov. 2019, https://www.youtube.com/watch?v=5Z_7TkX92bU&t=431s. Accessed 16 Mar. 2026.`
+      }
+    ]
+  },
 };
 
 // ── DOM References ──────────────────────────────────────────────────────────
@@ -204,6 +234,19 @@ function openAisle(key) {
               <span class="light-card-type">CURATOR'S NOTE</span>
             </div>
             <p class="curator-note-text">${item.curatorNote}</p>
+          </div>
+        `;
+      } else if (item.type === "citation") {
+        // Full-width citation entry
+        row.innerHTML = `
+          <div class="light-card citation-card">
+            <div class="light-card-header">
+              <svg class="book-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+              </svg>
+              <span class="light-card-type">SOURCE</span>
+            </div>
+            <p class="citation-text">${item.text}</p>
           </div>
         `;
       }

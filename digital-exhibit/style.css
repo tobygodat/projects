@@ -821,3 +821,33 @@ body {
     padding: 0 5vw;
   }
 }
+
+/* ── Citation / Works Cited Cards ────────────────── */
+.citation-card {
+  padding: 24px 30px;
+  width: 100%;
+}
+
+.citation-text {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #ccc;
+  margin: 0;
+  padding-left: 36px;
+  text-indent: -36px;
+}
+
+.citation-text i {
+  font-style: italic;
+}
+
+.citation-text a {
+  color: #ffe8a1;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 232, 161, 0.4);
+  transition: text-decoration-color 0.2s;
+}
+.citation-text a:hover {
+  text-decoration-color: #ffe8a1;
+}
