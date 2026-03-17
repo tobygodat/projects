@@ -167,7 +167,13 @@ function openAisle(key) {
         // Left: Visual Artifact (YouTube or image), Right: Curator's Note
         let mediaHTML = '';
         if (item.youtubeId) {
-          mediaHTML = `<iframe src="https://www.youtube.com/embed/${item.youtubeId}?autoplay=0" title="${item.source || ''}" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width:100%;height:100%;position:absolute;top:0;left:0;"></iframe>`;
+          let startParam = '';
+          if (item.youtubeTime) {
+            const parts = item.youtubeTime.split(':');
+            const seconds = parseInt(parts[0]) * 60 + parseInt(parts[1]);
+            startParam = `&start=${seconds}`;
+          }
+          mediaHTML = `<iframe src="https://www.youtube.com/embed/${item.youtubeId}?autoplay=0${startParam}" title="${item.source || ''}" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width:100%;height:100%;position:absolute;top:0;left:0;"></iframe>`;
         } else if (item.media) {
           mediaHTML = `<img src="${item.media}" alt="${item.source || ''}" style="width:100%;height:100%;object-fit:cover;">`;
         }
