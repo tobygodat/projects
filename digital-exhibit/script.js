@@ -107,7 +107,7 @@ const aisles = {
       },
       {
         type: "citation",
-        text: `"Bartleby (2018, By the By Productions)". <i>YouTube</i>, uploaded by Eate Studios, 19 Nov. 2019, https://www.youtube.com/watch?v=5Z_7TkX92bU&t=431s. Accessed 16 Mar. 2026.`
+        text: `"Bartleby (2018, By the By Productions)". <i>YouTube</i>, uploaded by Eate Studios, 19 Nov. 2019, https://www.youtube.com/watch?v=5Z_7TkX92bU&t=431s. Accessed 16 Mar. 2026`
       }
     ]
   },
